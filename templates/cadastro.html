@@ -11,7 +11,7 @@
 
 </head>
 
-<body style="background:  rgb(209, 165, 118);">
+<body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <!-- <a class="nav-link" href="/">Home</a>
@@ -41,7 +41,8 @@
       </div>
     </div>
   </nav>
-  <h1>Cadastro de Cafeteria</h1>
+  <h1 class="meio">Cadastro de Cafeteria</h1>
+  <div class="div_label">
   <form method="POST" enctype="multipart/form-data">
     {{ form.hidden_tag() }}
     <div class="mb-3 ">
@@ -67,9 +68,10 @@
       {{ form.categoria.label }} <br>
       {{ form.categoria(class="form-control") }}
     </div>
-    {{ form.submit(class="btn btn-dark") }}
+    <div class="botao">
+    {{ form.submit(class="btn btn-dark") }}</div>
   </form>
-
+</div>
 
 </body>
 

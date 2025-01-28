@@ -25,7 +25,7 @@ class Cafeteria(db.Model):
 class CadastroForm(FlaskForm):
     nome = StringField('Nome')
     preco = FloatField('Preço')
-    categoria = SelectField('Categorias', choices=[('1', 'Bebidas'), ('2', 'Comidas')])
+    categoria = SelectField('Categorias', choices=[('1', 'Comidas'), ('2', 'Bebidas')])
     imagem = FileField('Imagem')
     submit = SubmitField('Cadastrar')
 
@@ -33,7 +33,7 @@ class CadastroForm(FlaskForm):
 def index():
     return render_template('index.html')
 
-@app.route('/cadastro', methods=['GET', 'POST'])
+@app.route('/cadastro', methods=['GET', 'POST'])  
 def cadastro():
     form = CadastroForm()
     if form.validate_on_submit():
@@ -46,7 +46,7 @@ def cadastro():
         imagem.save(image_path)
         db.session.add(cafeteria)
         db.session.commit()
-        return redirect(url_for('listagem'))
+        return redirect(url_for('cardapio'))
     return render_template('cadastro.html', form=form, cafeteria = None)
 
 @app.route('/listagem', methods=['GET'])
@@ -79,8 +79,12 @@ def excluir(id):
 
 @app.route('/cardapio', methods=['GET'])
 def cardapio():
-    cafeterias = Cafeteria.query.all()
-    return render_template('cardapio.html', cafeterias=cafeterias)
+    # cafeterias = Cafeteria.query.all()
+    # comidas = Cafeteria.filter_by('categoria'==1)
+    # bebidas = Cafeteria.filter_by('categoria'==2)
+    comidas = db.session.query(Cafeteria).filter_by(categoria='1')
+    bebidas = db.session.query(Cafeteria).filter_by(categoria='2')
+    return render_template('cardapio.html', comidas=comidas, bebidas=bebidas)
 
  
 

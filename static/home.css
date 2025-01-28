@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
+
+  body{
+    /* background-image: url(/static/Design\ sem\ nome.png) ; */
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/static/Design\ sem\ nome.png);
+}
+  
 
 .navbar-brand{
     text-shadow: 2px 1px #558ABB;
@@ -10,11 +17,24 @@
 
 .navbar .nav-link:hover, .nav-link-active{   
     text-shadow: 1px 0px #558ABB;
-    
 }
+.div_label{   
+  width: 400px;
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 5px;
+  /* border-radius: 50px; */
 
+ 
+}
+.botao{
+  display: flex;
+    justify-content: center;
+}
 .home{
     text-align: center;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/static/Design\ sem\ nome.png);
+
 }
 
 .home img{
@@ -24,6 +44,87 @@
 
 .home h2{
     justify-content: end;
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.home h1{
+    font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar-brand{
+    text-shadow: 2px 1px #558ABB;
+}
+
+.nav-link active{   
+    text-shadow: 2px 1px #558ABB;
+
+}
+
+.nav-link{
+    
+    text-shadow: 1px 0px #558ABB;
+
+}
+.home{
+    text-align: center;
+}
+
+.home img{
+    margin: 0 auto;
+    
+}
+
+.h1{
+    justify-content: end;
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+
+.meio{
+   text-align: center;
+   justify-content: end;
+   font-family: "Great Vibes", serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+  .navbar .nav-link:hover, .nav-link-active{   
+    text-shadow: 1px 0px #558ABB;
+    
+}
+
+.table-active th{
+    font-size: 15pt;
+      margin-bottom: 10px;
+      font-family: "Domine", serif;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal; 
+}
+
+
+.table {
+    font-size: 15pt;
+      margin-bottom: 10px;
+      font-family: "Domine", serif;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
+      margin-top: 30px;
 }
 
 footer{
@@ -33,6 +134,6 @@ footer{
     justify-content: end;
     background-color: white;
     margin-top: 100px;
-
+    padding: 10px;
 }
 

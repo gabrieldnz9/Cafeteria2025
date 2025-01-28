@@ -10,7 +10,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body style="background:  rgb(209, 165, 118);">
+<body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <!-- <a class="nav-link" href="/">Home</a>
@@ -40,8 +40,8 @@
       </div>
     </div>
   </nav>
-  <h1>Listagem da Cafeteria</h1>
-  <table class="table table-dark">
+  <h1 class="h1">Listagem da Cafeteria</h1>
+  <table class="table">
     <tr class="table-active">
       <th>Nome</th>
       <th>Preço</th>
@@ -55,10 +55,10 @@
       <td>{{ cafeteria.preco }}</td>
       <td>{{ cafeteria.categoria }}</td>
       <td><img src="{{ cafeteria.imagem }}" alt="{{ cafeteria.nome }}" width="100"></td>
-      <td>
-        <a href="/editar/{{ cafeteria.id }}">Editar</a>
-        <a href="/excluir/{{ cafeteria.id }}" onclick="return confirm('Tem certeza que deseja excluir?')">Excluir</a>
-      </td>
+      <td class="btn btn-dark">
+        <a href="/editar/{{ cafeteria.id }}">Editar</a> </td>
+        <td class="btn btn-dark" style="margin-left: 10px;">
+        <a href="/excluir/{{ cafeteria.id }}" onclick="return confirm('Tem certeza que deseja excluir?')">Excluir</a></td>
     </tr>
     {% endfor %}
   </table>
