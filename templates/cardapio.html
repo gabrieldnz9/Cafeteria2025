@@ -11,43 +11,44 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <!-- <a class="nav-link" href="/">Home</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button> -->
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-link-active" href="/cardapio">Cardápio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/cadastro">Cadastro</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/listagem">Listagem</a>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-active" href="/cardapio">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cadastro">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/listagem">Listagem</a>
+                    </li>
                 </ul>
-                <!-- <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form> -->
-              </div>
+                <!-- Ícone de Carrinho no final da navbar -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="/carrinho">
+                            <i class="fas fa-shopping-cart"></i> -->
+                        </a>
+                    </li>
+                </ul>
             </div>
-          </nav>
-        <img src="/static/logo-removebg-preview.png" alt="logo">
         </div>
-    </header>
+    </nav>
+    <img src="/static/uploads/62_Sem_Titulo_20250129085253.webp" alt="logo">
+</header>
+
 
     <div class="domine-uniquifier">
         <h1>cardápio</h1>
@@ -60,7 +61,7 @@
                 <div class="info">
                     <p><strong>{{ comida.nome }}</strong></p>
                     <span>R$: {{ comida.preco }}</span>
-                    <button>Adicionar</button>
+                    <button><a href="/carrinho/{{comida.id}}">Detalhes</a></button>
                 </div>
             </div>
             {% endfor %}
@@ -74,7 +75,7 @@
                 <div class="info">
                     <p><strong>{{ bebida.nome }}</strong></p>
                     <span>R$: {{ bebida.preco }}</span>
-                    <button>Adicionar</button>
+                  <button><a href="/carrinho/{{bebida.id}}">Detalhes</a></button>
                 </div>
             </div>
             {% endfor %}

@@ -103,7 +103,7 @@ header img{
       width: 300px;
       height: 400px;
       margin: 10px 0;
-      background-color:rgb(232, 121, 52);
+      background-color:#f3f3f3;
   
       border-radius: 20px;
   }
@@ -148,6 +148,11 @@ header img{
       margin-top: 5px;
       border-radius: 20px;
   } 
+
+ .info button a{
+    text-decoration: none;
+    color: white;
+ }
   
   .info button:hover{
       cursor: pointer;
@@ -161,3 +166,13 @@ header img{
     text-shadow: 1px 0px #558ABB;
     
 }
+
+.container{
+    width: 900px;
+    height: 500px;
+    background-color:#e3d5d5;
+    margin-top: 220px;
+    border-radius: 20px;
+}
+
+

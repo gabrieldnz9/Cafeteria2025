@@ -86,8 +86,12 @@ def cardapio():
     bebidas = db.session.query(Cafeteria).filter_by(categoria='2')
     return render_template('cardapio.html', comidas=comidas, bebidas=bebidas)
 
+@app.route('/carrinho/<int:id>', methods= ['GET', 'POST'])
+def carrinho(id):
+    cafeteria = Cafeteria.query.get(id)
+    return render_template('carrinho.html', cafeteria=cafeteria)
  
-
+ 
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
