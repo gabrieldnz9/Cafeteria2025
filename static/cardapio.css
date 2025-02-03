@@ -104,9 +104,12 @@ header img{
       height: 400px;
       margin: 10px 0;
       background-color:#f3f3f3;
-  
       border-radius: 20px;
   }
+  .banner-comidas:hover {
+    transform: scale(1.05);           
+  }
+
   
   .banner-comidas img{
       width: 100%;
@@ -170,9 +173,15 @@ header img{
 .container{
     width: 900px;
     height: 500px;
-    background-color:#e3d5d5;
+    background-color:#f3f3f3;
     margin-top: 220px;
     border-radius: 20px;
 }
 
+.b1 p{
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
 

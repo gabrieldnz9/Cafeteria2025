@@ -90,8 +90,8 @@ def cardapio():
 def carrinho(id):
     cafeteria = Cafeteria.query.get(id)
     return render_template('carrinho.html', cafeteria=cafeteria)
- 
- 
+
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()

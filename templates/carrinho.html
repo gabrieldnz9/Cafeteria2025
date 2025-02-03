@@ -13,18 +13,23 @@
 <body>
     <div class="container" style="display: flex; align-items: center;">
         <div class="foto" style="margin-right: 20px;">
-            <img src="/{{ cafeteria.imagem }}" alt="{{ cafeteria.nome }}" style="width: 300px; height: 250px;">
+            <img src="/{{ cafeteria.imagem }}" alt="{{ cafeteria.nome }}" style="width: 300px; height: 250px; border-radius: 20px;">
         </div>
         <div class="b1">
-            <p><strong>Nome:</strong> {{ cafeteria.nome }}</p>
-            <p><strong>Preço:</strong> R$ {{ cafeteria.preco }}</p>
-            <p><strong>Categoria:</strong> {% if cafeteria.categoria == '1' %} Comida {% else %} Bebida {% endif %}</p>
+            <p><strong>Nome:</strong> <strong>{{ cafeteria.nome }}</strong></p>
+            <p><strong>Preço:</strong><strong> R$ {{ cafeteria.preco }}</strong></p>
+            <p><strong>Categoria:</strong> <strong>{% if cafeteria.categoria == '1' %} Comida {% else %} Bebida {% endif %}</strong></p>
         </div>
     </div>
     <div style="text-align: center; margin-top: -60px;">
-        <button style="padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
-            Adicionar
-        </button>
+        <button class="bt2" style="padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; transition: transform 0.3s;">
+            <i href="#" onclick="alert('Compra realizada com sucesso!')">Comprar</i>
+        </button>       
+        <style>
+          .bt2:hover {
+            transform: scale(0.95);           
+          }
+        </style>      
     </div>
 </body>
 </html>
