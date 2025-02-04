@@ -27,12 +27,12 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/cardapio">Cardápio</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link nav-link-active" href="/cadastro">Cadastro</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/listagem">Listagem</a>
-          </li>
+          </li> -->
         </ul>
         <!-- <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -43,35 +43,35 @@
   </nav>
   <h1 class="meio">Cadastro de Cafeteria</h1>
   <div class="div_label">
-  <form method="POST" enctype="multipart/form-data">
-    {{ form.hidden_tag() }}
-    <div class="mb-3 ">
-      {{ form.nome.label }} <br>
-    {{ form.nome(class="form-control")}}
-    </div>
-    <div class="mb-3">
-      {{ form.preco.label }} <br>
-      {{ form.preco(class="form-control") }}
-    </div>
+    <form method="POST" enctype="multipart/form-data">
+      {{ form.hidden_tag() }}
+      <div class="mb-3 ">
+        {{ form.nome.label }} <br>
+        {{ form.nome(class="form-control")}}
+      </div>
+      <div class="mb-3">
+        {{ form.preco.label }} <br>
+        {{ form.preco(class="form-control") }}
+      </div>
 
-    <div class="mb-3">
-      {{ form.imagem.label }}<br>
-      {% if cafeteria.imagem %}
-      <img src="/{{ cafeteria.imagem }}" alt="{{ cafeteria.nome }}" width="100">
-      {{ form.imagem(class="form-control") }}
-      {% else %}
-      {{ form.imagem(class="form-control") }}
-      {% endif %}
-    </div>
+      <div class="mb-3">
+        {{ form.imagem.label }}<br>
+        {% if cafeteria.imagem %}
+        <img src="/{{ cafeteria.imagem }}" alt="{{ cafeteria.nome }}" width="100">
+        {{ form.imagem(class="form-control") }}
+        {% else %}
+        {{ form.imagem(class="form-control") }}
+        {% endif %}
+      </div>
 
-    <div class="mb-3">
-      {{ form.categoria.label }} <br>
-      {{ form.categoria(class="form-control") }}
-    </div>
-    <div class="botao">
-    {{ form.submit(class="btn btn-dark") }}</div>
-  </form>
-</div>
+      <div class="mb-3">
+        {{ form.categoria.label }} <br>
+        {{ form.categoria(class="form-control") }}
+      </div>
+      <div class="botao">
+        {{ form.submit(class="btn btn-dark") }}</div>
+    </form>
+  </div>
 
 </body>
 

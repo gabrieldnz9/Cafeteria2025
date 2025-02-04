@@ -91,6 +91,11 @@ def carrinho(id):
     cafeteria = Cafeteria.query.get(id)
     return render_template('carrinho.html', cafeteria=cafeteria)
 
+@app.route('/sobre', methods=['GET'])
+def sobre():
+    cafeterias = Cafeteria.query.all()
+    return render_template('sobre.html', cafeterias=cafeterias)
+
 
 if __name__ == '__main__':
     with app.app_context():

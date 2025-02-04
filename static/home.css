@@ -1,97 +1,101 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-  }
 
-  body{
-    /* background-image: url(/static/Design\ sem\ nome.png) ; */
-    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/static/Design\ sem\ nome.png);
 }
-  
 
-.navbar-brand{
+body {
+    /* background-image: url(/static/Design\ sem\ nome.png) ; */
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(/static/Design\ sem\ nome.png);
+}
+
+
+.navbar-brand {
     text-shadow: 2px 1px #558ABB;
 }
 
-.navbar .nav-link:hover, .nav-link-active{   
+.navbar .nav-link:hover,
+.nav-link-active {
     text-shadow: 1px 0px #558ABB;
 }
 
-.div_label{   
-  width: 400px;
-  margin: 0 auto;
-  border: 2px solid black;
-  padding: 5px;
-  border-radius: 20px;
-  background-color: aliceblue;
-  font-family: "Domine", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;  
+.div_label {
+    width: 400px;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 
- 
+
 }
-.botao{
-  display: flex;
+
+.botao {
+    display: flex;
     justify-content: center;
 }
-.home{
+
+.home {
     text-align: center;
-    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/static/Design\ sem\ nome.png);
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(/static/Design\ sem\ nome.png);
 
 }
 
-.home img{
+.home img {
     margin: 0 auto;
-    
+
 }
 
-.home h2{
+.home h2 {
     justify-content: end;
     font-family: "Great Vibes", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.home h1{
+.home h1 {
     font-family: "Playwrite IN", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  .navbar-brand{
+.navbar-brand {
     text-shadow: 2px 1px #558ABB;
 }
 
-.nav-link active{   
+.nav-link active {
     text-shadow: 2px 1px #558ABB;
 
 }
 
-.nav-link{
-    
+.nav-link {
+
     text-shadow: 1px 0px #558ABB;
 
 }
-.home{
+
+.home {
     text-align: center;
 }
 
-.home img{
+.home img {
     margin: 0 auto;
-    
+
 }
 
-.h1{
+.h1 {
     justify-content: end;
     font-family: "Great Vibes", serif;
     font-weight: 400;
@@ -100,61 +104,164 @@
 }
 
 
-.meio{
-   text-align: center;
-   justify-content: end;
-   font-family: "Great Vibes", serif;
-   font-weight: 400;
-   font-style: normal;
+.meio {
+    text-align: center;
+    justify-content: end;
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-  .navbar .nav-link:hover, .nav-link-active{   
+.navbar .nav-link:hover,
+.nav-link-active {
     text-shadow: 1px 0px #558ABB;
-    
+
 }
 
-.table-active th{
+.table-active th {
     font-size: 15pt;
-      margin-bottom: 10px;
-      font-family: "Domine", serif;
-      font-optical-sizing: auto;
-      font-weight: weight;
-      font-style: normal; 
+    margin-bottom: 10px;
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 
 .table {
     font-size: 15pt;
-      margin-bottom: 10px;
-      font-family: "Domine", serif;
-      font-optical-sizing: auto;
-      font-weight: weight;
-      font-style: normal;
-      margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin-top: 30px;
 }
 
-footer{
+footer {
     width: 100%;
-    height: 400px;
-    background-color:  rgb(0, 0, 0);
-    margin-top: 300px;
+    /* height: 400px; */
+    background-color: rgb(0, 0, 0);
+    margin-top: 200px;
     padding: 20px;
 
 }
 
 .descriçao {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     width: 800px;
     margin: 0 auto;
     color: rgb(255, 255, 255);
     gap: 90px;
     font-family: "Domine", serif;
-      font-optical-sizing: auto;
-      font-weight: weight;
-      font-style: normal;  
-  }
-  
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
 
-  
-   
+@media only screen and (max-width: 600px) {
+    .descriçao {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
+
+.ct1 {
+    width: 80%;
+    /* height: 900px; */
+    background-color: #f3f3f3;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.tt {
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.tt h1 {
+    text-shadow: 2px 1px #558ABB;
+}
+
+.pg {
+    /* border: 2px solid black; */
+
+    text-align: center;
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.pg h3 {
+    text-shadow: 2px 1px #558ABB;
+}
+
+.pg2 p {
+    padding-left: 0px;
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.pg3 p {
+    padding-left: 0px;
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.bnn1 {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    gap: 80px;
+    padding: 20px;
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* align-items: center;  */
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px) {
+    .bnn1 {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 100px;
+    }
+}
+
+.bnn1 img {
+    border-radius: 30px;
+
+}
+
+.bnn2 img {
+    border-radius: 30px;
+}
+
+/* .bnn2{
+    flex-direction: row;
+    display: flex;
+    gap: 100px;
+} */
+
+.tudo {
+    margin-top: 100px;
+    width: 100%;
+}
+
+/* .bnn1:hover {
+    transform: scale(1.05);           
+  }
+
+  .bnn2:hover {
+    transform: scale(1.05);           
+  } */

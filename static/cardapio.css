@@ -150,6 +150,10 @@ header img{
       margin: 0 auto;
       margin-top: 5px;
       border-radius: 20px;
+      font-family: "Domine", serif;   
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
   } 
 
  .info button a{
@@ -171,17 +175,24 @@ header img{
 }
 
 .container{
-    width: 900px;
-    height: 500px;
+    width: 700px;
+    height: 460px;
     background-color:#f3f3f3;
     margin-top: 220px;
     border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
 }
 
 .b1 p{
-    font-family: "Domine", serif;
+    font-family: "Domine", serif;   
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
 }
-
